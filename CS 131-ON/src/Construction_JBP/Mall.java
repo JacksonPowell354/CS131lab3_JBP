@@ -1,4 +1,4 @@
-package Lab1Project;
+package Construction_JBP;
 
 public class Mall extends Business {
 	//instance variables - visibility is private so subclasses can manipulate the data only with super().

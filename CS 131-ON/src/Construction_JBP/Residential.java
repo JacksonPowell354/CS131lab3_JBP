@@ -1,4 +1,4 @@
-package Lab1Project;
+package Construction_JBP;
 
 public class Residential extends Building {
 	//instance variables - visibility is protected so subclasses can manipulate the data directly.

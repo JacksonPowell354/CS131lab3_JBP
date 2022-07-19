@@ -1,4 +1,4 @@
-package Lab1Project;
+package Construction_JBP;
 /**
  * This is the base Building object from which
  * all other characters will be derived. 

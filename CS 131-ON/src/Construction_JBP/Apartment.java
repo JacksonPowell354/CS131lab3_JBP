@@ -1,4 +1,4 @@
-package Lab1Project;
+package Construction_JBP;
 
 public class Apartment extends Residential {
 	private int numRentableUnits;
