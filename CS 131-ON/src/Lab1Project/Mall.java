@@ -1,10 +1,14 @@
 package Lab1Project;
 
 public class Mall extends Business {
+	//instance variables - visibility is private so subclasses can manipulate the data only with super().
+
 private int numRentedUnits;
 private double medianUnitSize;
 private int numParkingSpaces;
-
+/**
+ *  The empty argument constructor
+ */
 public Mall() {
 	super();
 	this.numParkingSpaces = 0;
@@ -12,7 +16,8 @@ public Mall() {
 	this.medianUnitSize=0.0;
 	
 }//end empty-argument constructor
-
+/**
+ *  The preferred argument constructor generates all the specifications for the apartment class */
 public Mall(String projectName,String completeAddress, double totalSquareFeet,String occupancyGroup,String subGroup,int numRentedUnits,double medianUnitSize, int numParkingSpaces) {
 	super(projectName, completeAddress, totalSquareFeet, occupancyGroup, subGroup, numRentedUnits);
 	this.medianUnitSize = medianUnitSize;
@@ -22,14 +27,18 @@ public Mall(String projectName,String completeAddress, double totalSquareFeet,St
 public void draw() {
 	System.out.println("Drawing code for " + this.getClass().getSimpleName());
 	}//end draw
-
+/**
+ *  displayData method uses toString to piece the variables together
+ */
 public String displayData() {
 String str = "";
 str += super.toString() + "\nNumber of Rented Units: " + numRentedUnits + "\nMedian Unit Size: "
 + medianUnitSize + "\nNumber of Parking Spaces: " + numParkingSpaces;
 return str;
 }//end displayData
-
+/**
+ *  Getters and Setters
+ */
 public int getNumRentedUnits() {
 	return numRentedUnits;
 }//end getNumRentedUnits

@@ -1,6 +1,14 @@
 package Lab1Project;
+/**
+ * This is the base Building object from which
+ * all other characters will be derived. 
+ * @author Jackson Powell
+ * Project1
+ * CS131ON
+ */
 
 public class Building {
+	//instance variables - visibility is public.
 
 	public String projectName;
 	public String completeAddress;
@@ -16,7 +24,11 @@ public class Building {
 		this.subGroup="";
 		
 	}//end empty-argument constructor
-	
+	/**
+	 * This constructor allows the caller to pass in
+	 * the the name, address, square feet, group, and subgroup for the object.
+	 * 
+	 */
 	public Building(String projectName,String completeAddress, double totalSquareFeet,String occupancyGroup,String subGroup) {
 		this.projectName=projectName;
 		this.completeAddress=completeAddress;
@@ -27,6 +39,10 @@ public class Building {
 	public void draw() {
 		System.out.println("Drawing code for " + this.getClass().getSimpleName());
 	}//end draw
+	/**
+	 *This method allows the user to display all the data in one spot
+	 * 
+	 */
 	public String displayData() {
 		String str = "";
 		str += "Project Name: " + projectName + "\nAddress: " + completeAddress + "\nSquare Feet: " + totalSquareFeet
@@ -73,7 +89,10 @@ public class Building {
 	public void setSubGroup(String subGroup) {
 		this.subGroup = subGroup;
 	}//end setSubGroup
-
+	/**
+	 * toString to test all the code
+	 * 
+	 */
 	@Override
 	public String toString() {
 		return "Building [projectName=" + projectName + ", completeAddress=" + completeAddress + ", totalSquareFeet="

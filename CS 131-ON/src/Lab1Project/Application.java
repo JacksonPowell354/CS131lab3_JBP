@@ -18,6 +18,7 @@ public class Application {
 			System.out.println("********Business Building Details********\n" + bsn1.toString()+"\n");
 
 			System.out.println("********Apartment Details********\n" + apt1.displayData()+"\n");
+			
 
 			System.out.println("********SingleFamilyHome Details********\n" + sfh1.displayData()+"\n");
 		
