@@ -10,7 +10,7 @@ public Apartment() {
 	numRentableUnits = 0;
 	avgUnitSize = 0.0;
 	parkingAvailable = false;
-	//hello
+	//hello my boi
 }//end empty-argument constructor
 	
 public Apartment(String projectName, String completeAddress, double totalSquareFeet, String occupancyGroup,
