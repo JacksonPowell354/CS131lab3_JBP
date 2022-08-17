@@ -8,25 +8,25 @@ public class TestLinkedList<T> {
 		GenericLinkedList <Integer> a= new GenericLinkedList<Integer>();
 		GenericLinkedList <Double> b = new GenericLinkedList<Double>();
 		
-		GenericNode aNode=new GenericNode();
+		GenericNode <String>aNode=new GenericNode<String>();
 		aNode.setData("Element 1");
 		myList.addNode(aNode);
 		aNode = new GenericNode();
 		aNode.setData("Element 2");
 		myList.addNode(aNode);
 		
-		GenericNode bNode=new GenericNode();
+		GenericNode <Integer>bNode=new GenericNode<Integer>();
 		bNode.setData(1);
 		a.addNode(bNode);
 		bNode = new GenericNode();
 		bNode.setData(12);
 		a.addNode(bNode);
 		
-		GenericNode cNode=new GenericNode();
-		cNode.setData(1.45);
+		GenericNode<Double> cNode=new GenericNode<Double>();
+		cNode.setData(13.45);
 		b.addNode(cNode);
 		cNode = new GenericNode();
-		cNode.setData(12.23);
+		cNode.setData(15.23);
 		b.addNode(cNode);
 		
 		GenericNode tempnode=myList.getList();
@@ -41,7 +41,7 @@ public class TestLinkedList<T> {
 			System.out.println(atempnode.getData());
 			atempnode=atempnode.getNextNode();
 		} while (atempnode!=null);
-		GenericNode btempnode=a.getList();
+		GenericNode btempnode=b.getList();
 		do 
 		{
 			System.out.println(btempnode.getData());

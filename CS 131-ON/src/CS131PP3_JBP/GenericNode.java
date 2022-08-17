@@ -9,9 +9,9 @@ package CS131PP3_JBP;
  * Programming Project 1 Start Project
  * CS131ON
  */
-public class GenericNode <T extends Number> {
+public class GenericNode <T> {
 	
-	private String data;  //data that the object stores
+	private T data;  //data that the object stores
 	private GenericNode nextNode; //pointer to the nextNode that will be in LinkedList
 	
 	/**
@@ -26,9 +26,9 @@ public class GenericNode <T extends Number> {
 	
 	/**
 	 * This method sets the data of the object.
-	 * @param data
+	 * @param string
 	 */
-	public void setData(String data) {
+	public void setData(T data) {
 		this.data=data;
 	}//end setData
 	
